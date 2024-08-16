@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+}
+
+#hero::before {
+
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -220px;
+    width: 800px;
+    height: 600px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(263, 38%, 24%, 0.7),
+            transparent 64%);
+    z-index: -1;
+}
+
+#hero::after {
+
+    content: '';
+    position: absolute;
+    top: -250px;
+    left: -220px;
+    width: 800px;
+    height: 600px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(263, 38%, 24%, 0.7),
+            transparent 64%);
+    z-index: -1;
+
+}
+
+#about::after {
+
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: -120px;
+    width: 800px;
+    height: 600px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(263, 38%, 24%, 0.7),
+            transparent 64%);
+    z-index: -1;
+
+}
+
+#tokenomics::after {
+
+    content: '';
+    position: absolute;
+    top: -250px;
+    left: -120px;
+    width: 800px;
+    height: 600px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(263, 38%, 24%, 0.7),
+            transparent 64%);
+    z-index: -1;
+
+}
+
+#gallery::after {
+
+    content: '';
+    position: absolute;
+    top: -250px;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    transform: translateX(-50%);
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(263, 38%, 24%, 0.7),
+            transparent 64%);
+    z-index: -1;
+
+}
+
+
+.gradient-text {
+    background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border-rounded {
+    border-radius: 1.5rem 0 50px 0%;
+}
