@@ -3,6 +3,7 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { LiaTimesSolid } from "react-icons/lia";
 import { navlinks, socials } from "../constant";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,12 @@ const Header = () => {
   const handleSidebarClick = (e) => e.stopPropagation();
 
   return (
-    <header className="relative w-full z-50">
+    <motion.header
+      initial={{ y: 0, opacity: 0 }}
+      animate={{ y: [-50, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.9 }}
+      className="relative w-full z-50"
+    >
       <nav className="max-w-7xl mx-auto flex items-center justify-between py-4 px-5">
         <button onClick={handleMenu}>
           <HiOutlineMenuAlt2 size={35} className="text-white" />
@@ -95,7 +101,7 @@ const Header = () => {
           </div>
         </nav>
       )}
-    </header>
+    </motion.header>
   );
 };
 
