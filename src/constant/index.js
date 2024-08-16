@@ -32,25 +32,6 @@ export const tokenomics = [
   },
 ];
 
-export const socials = [
-  {
-    img: "/img/socials/twitter.png",
-    url: "",
-  },
-  {
-    img: "/img/socials/tele.png",
-    url: "",
-  },
-  {
-    img: "/img/socials/dextool.png",
-    url: "",
-  },
-  {
-    img: "/img/socials/dexscreener.png",
-    url: "",
-  },
-];
-
 export const sales = [
   {
     label: "Total Sales",
@@ -64,6 +45,11 @@ export const sales = [
     label: "Availability",
     value: "24/7",
   },
+];
+
+export const socials = [
+  { img: "/img/socials/tele.png", url: "https://t.me/GracieOnETH" },
+  { img: "/img/socials/x.png", url: "https://x.com/gracieoneth/" },
 ];
 
 export const gallery = [

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { LiaTimesSolid } from "react-icons/lia";
-import { navlinks } from "../constant";
+import { navlinks, socials } from "../constant";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,13 +20,27 @@ const Header = () => {
         </button>
         <h1 className="font-title text-sky-500 text-3xl font-bold">GRACIE</h1>
 
-        <button className="flex items-center gap-5 text-white font-semibold gradient-border pl-9 rounded-full border">
-          Buy Now
-          <MdKeyboardArrowRight
-            size={55}
-            className="p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"
-          />
-        </button>
+        <div className="md:flex items-center md:gap-7">
+          <ul className="hidden md:flex items-center gap-x-5">
+            {socials.map((item, index) => (
+              <li key={index}>
+                <a href={item.url}>
+                  <img src={item.img} className="w-10" />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="https://x.com/ModdedQuad/status/1824208235475198311"
+            className="flex items-center gap-5 text-white font-semibold gradient-border pl-7 rounded-full border whitespace-nowrap"
+          >
+            Buy Now
+            <MdKeyboardArrowRight
+              size={55}
+              className="p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full "
+            />
+          </a>
+        </div>
       </nav>
 
       {isOpen && (
@@ -58,6 +72,25 @@ const Header = () => {
                   </a>
                 </li>
               ))}
+              <a
+                href="https://x.com/ModdedQuad/status/1824208235475198311"
+                className="flex items-center gap-5 text-white font-semibold gradient-border pl-9 rounded-full border mt-20 whitespace-nowrap"
+              >
+                Buy Now
+                <MdKeyboardArrowRight
+                  size={55}
+                  className="p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"
+                />
+              </a>
+              <ul className="flex items-center gap-x-12 md:hidden">
+                {socials.map((item, index) => (
+                  <li key={index}>
+                    <a href={item.url}>
+                      <img src={item.img} className="w-16" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </ul>
           </div>
         </nav>
