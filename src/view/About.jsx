@@ -23,7 +23,7 @@ const About = () => {
           <div className="flex items-center gap-7 mt-12">
             <a
               href="https://x.com/ModdedQuad/status/1824208235475198311"
-              className="flex items-center gap-5 text-white font-semibold gradient-border pl-9 rounded-full border whitespace-nowrap"
+              className="flex items-center gap-5 text-white font-semibold gradient-border pl-9 rounded-full border whitespace-nowrap hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 duration-500 transition-all ease-in-out"
             >
               Buy Now
               <MdKeyboardArrowRight
@@ -31,9 +31,9 @@ const About = () => {
                 className="p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"
               />
             </a>
-            <button className="text-white textxl font-bold">
+            <a href="#tokenomics" className="text-white textxl font-bold">
               Go To Tokenomics
-            </button>
+            </a>
           </div>
         </div>
         <div className="w-full md:w-1/2 mt-9 md:mt-0">

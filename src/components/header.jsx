@@ -32,7 +32,7 @@ const Header = () => {
           </ul>
           <a
             href="https://x.com/ModdedQuad/status/1824208235475198311"
-            className="flex items-center gap-5 text-white font-semibold gradient-border pl-7 rounded-full border whitespace-nowrap"
+            className="flex items-center gap-5 text-white font-semibold gradient-border pl-7 rounded-full border whitespace-nowrap hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 duration-500 transition-all ease-in-out"
           >
             Buy Now
             <MdKeyboardArrowRight

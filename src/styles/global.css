@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: "Roboto Mono", monospace;
     scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
 
 body {
