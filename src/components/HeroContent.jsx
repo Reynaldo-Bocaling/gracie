@@ -9,13 +9,14 @@ const HeroContent = () => {
         <>
           <div className="w-full flex items-center gap-12">
             <motion.h1
-              initial={{ y: 0, opacity: 0 }}
-              animate={{ y: [-100, 0], opacity: [0, 1] }}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="w-2/5s  font-title gradient-text text-9xl font-bold"
+              className="font-title gradient-text text-11xl font-bold"
             >
               WELCOME
             </motion.h1>
+
             <motion.p
               initial={{ x: 0, opacity: 0 }}
               animate={{ x: [100, 0], opacity: [0, 1] }}
@@ -34,7 +35,7 @@ const HeroContent = () => {
               initial={{ y: 0, opacity: 0 }}
               animate={{ y: [100, 0], opacity: [0, 1] }}
               transition={{ duration: 1 }}
-              className="w-[80%]  text-10xl font-bold whitespace-nowrap flex"
+              className="w-[80%]  text-12xl font-bold whitespace-nowrap flex"
             >
               <h1 className="font-title gradient-text pr-12"> TO</h1>{" "}
               <span className="text-[#f19b11]">$</span>{" "}
