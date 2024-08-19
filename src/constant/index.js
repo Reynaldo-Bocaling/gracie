@@ -48,8 +48,8 @@ export const sales = [
 ];
 
 export const socials = [
-  { img: "/img/socials/tele.png", url: "https://t.me/GracieOnETH" },
-  { img: "/img/socials/x.png", url: "https://x.com/gracieoneth/" },
+  { img: "/img/socials/tele.png", url: "" },
+  { img: "/img/socials/x.png", url: "" },
 ];
 
 export const gallery = [

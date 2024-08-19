@@ -9,11 +9,7 @@ const Hero = () => {
       <div className="max-w-7xl w-full mx-auto mt-7 px- absolute -top-12 md:top-12 left-1/2 -translate-x-1/2">
         <HeroContent />
       </div>
-      <img
-        src="/img/hero2.png"
-        className="w-full h-[47rem] md:min-h-[60rem]"
-        alt=""
-      />
+      <img src="/img/hero2.png" className="w-full h-[45rem] md:h-auto" alt="" />
     </section>
   );
 };
