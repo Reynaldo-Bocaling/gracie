@@ -12,7 +12,7 @@ const App = () => {
       <Hero />
       <About />
       <Tokenomics />
-      <Gallery />
+      {/* <Gallery /> */}
     </main>
   );
 };

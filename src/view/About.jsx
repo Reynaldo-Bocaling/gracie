@@ -22,11 +22,13 @@ const About = () => {
             className="flex flex-col gap-7 mt-9 max-w-xl "
           >
             <p className="text-sm md:text-base text-center md:text-left text-gray-200 tracking-wider ">
-              Gracie represents a groundbreaking step in neuroscience as the
-              first animal subject for Neuralink's brain transplant. Our mission
-              is to explore and advance the potential of brain-computer
-              interfaces, aiming to transform how we understand and enhance
-              neural functions.
+              $ARKY is inspired by Arky, the beloved dog of Hal Finney, a
+              pioneering cryptographer and potential founder of Bitcoin. This
+              unique meme token celebrates Finney's legacy by merging the
+              historical significance of Bitcoin with the vibrant meme culture,
+              offering enthusiasts a fun and meaningful digital currency
+              experience. Join us in commemorating Finney's contributions and
+              embrace the innovative spirit of $ARKY.
             </p>
           </motion.div>
           <motion.div
@@ -55,32 +57,10 @@ const About = () => {
             initial={{ y: 0, opacity: 0 }}
             whileInView={{ y: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
-            src="/img/about1.jpg"
+            src="/img/about2.png"
             className="w-full md:h-[25rem] rounded-3xl border border-indigo-500"
             alt=""
           />
-          <div className="relative flex items-center gap-6 mt-6 px-4">
-            <motion.img
-              initial={{ x: 0, opacity: 0 }}
-              whileInView={{ x: [-70, 0], opacity: [0, 1] }}
-              transition={{ duration: 1, delay: 0.5 }}
-              src="/img/about3.jpg"
-              className="w-1/2 h-15rem] rounded-3xl border border-indigo-500"
-              alt=""
-            />
-            <motion.img
-              initial={{ x: 0, opacity: 0 }}
-              whileInView={{ x: [70, 0], opacity: [0, 1] }}
-              transition={{ duration: 1, delay: 0.5 }}
-              src="/img/about2.jpg"
-              className="w-1/2 h-15rem] rounded-3xl border border-indigo-500"
-              alt=""
-            />
-            <MdArrowForward
-              size={65}
-              className="p-3 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full absolute -top-9 left-1/2 -translate-x-1/2 ml-2"
-            />
-          </div>
         </div>
       </div>
     </section>
