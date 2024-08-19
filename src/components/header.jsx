@@ -24,7 +24,11 @@ const Header = () => {
         <button onClick={handleMenu}>
           <HiOutlineMenuAlt2 size={35} className="text-white" />
         </button>
-        <h1 className="font-title text-sky-500 text-3xl font-bold">GRACIE</h1>
+
+        <div className="flex items-center gap-1">
+          <img src="/img/logo.png" className="w-14" alt="" />
+          <h1 className="gradient-text font-title text-2xl font-bold">ARKY</h1>
+        </div>
 
         <div className="md:flex items-center md:gap-7">
           <ul className="hidden md:flex items-center gap-x-5">
